@@ -1,12 +1,17 @@
 ﻿using System;
+using System.Linq;
 
 namespace PalindromeExercise
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+
+        }
+        public static bool IsPalindrome(string word)
+        {
+            return word.ToLower().SequenceEqual(word.ToLower().Reverse());
         }
     }
 }
